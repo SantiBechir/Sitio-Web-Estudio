@@ -8,7 +8,7 @@ body{
 .welcome{
     display: flex;
     width: 100%;
-    background: #fff;
+    background: rgba(206, 206, 206, 0.452);
     height: 6em;
     box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.377);
 }
@@ -16,5 +16,45 @@ body{
 .logo{
     width: 250px;
     margin-left: 50px;
+}
 
+.list{
+    width: 50%;
+    background: rgb(56, 50, 50);
+    display: block;
+    margin-left: 800px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.li-element{
+    position: absolute;
+    top: 2.3em;
+    right: 0px;
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 17px;
+    color: rgb(255, 249, 249);
+}
+
+.li-element:hover{
+    color: #ccc;
+}
+
+.inicio-li{
+    margin-right: 470px;
+}
+
+.nosotros-li{
+    margin-right: 320px;
+}
+
+.contacto-li{
+    margin-right: 190px;
+}
+
+.servicios-li{
+    margin-right: 75px;
 }

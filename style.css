@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+
+.welcome{
+    display: flex;
+    width: 100%;
+    background: #fff;
+    height: 6em;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.377);
+}
+
+.logo{
+    width: 250px;
+    margin-left: 50px;
+
+}

@@ -23,7 +23,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 20;
 }
 
 .logo{
@@ -268,4 +267,61 @@ li > a{
     margin-left: 5px;
     color: red;
 }
+
+/* HERO */
+.hero-nosotros{
+    width: 100vw;
+    background-image: url('Images/contabilidad.jpg');
+    padding: 10%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: rgba(36, 35, 35, 0.733);
+    border-bottom: 3.5px solid rgba(240, 46, 46, 0.849);
+    
+}
+
+.hero-title_nosotros{
+    font-size: 80px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-align: center;
+    z-index: 10;
+}
+
+.hero-paragraph_nosotros{
+    font-size: 25px;
+    display: block;
+    font-weight: 900;
+    word-spacing: 7px;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    z-index: 10;
+    color: black;
+}
+
+
+.nosotros-container{
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.subtitle_n{
+    font-weight: 900;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #d62121;
+}
+
+.paragraph_n{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 

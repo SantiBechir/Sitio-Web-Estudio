@@ -267,6 +267,7 @@ li > a{
     color: red;
 }
 
+/* Nosotros */
 /* HERO */
 .hero-nosotros{
     width: 100vw;
@@ -276,7 +277,7 @@ li > a{
     background-repeat: no-repeat;
     color: rgba(36, 35, 35, 0.733);
     border-bottom: 3.5px solid rgba(240, 46, 46, 0.849);
-    
+
 }
 
 .hero-title_nosotros{
@@ -322,6 +323,43 @@ li > a{
     font-family: 'Poppins', sans-serif;
 }
 
+/* Links de interes */
+
+/* Hero */
+.hero-links{
+    width: 100vw;
+    background-image: url('Images/hero-links.jpg');
+    padding: 10%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: rgba(36, 35, 35, 0.733);
+    border-bottom: 3.5px solid rgba(240, 46, 46, 0.849);
+
+}
+
+.hero-title_links{
+    font-size: 80px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-align: center;
+    z-index: 10;
+}
+
+.hero-paragraph_links{
+    font-size: 25px;
+    display: block;
+    font-weight: 900;
+    word-spacing: 7px;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    z-index: 10;
+    color: black;
+}
+
+
+/* Links */
 .links-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -333,24 +371,115 @@ li > a{
     
 }
 
-.grid_item_{
+.grid_item{
     display: flex;
     padding: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.grid_item_button > a{
+.grid_item_a {
     text-decoration: none;
-    font-size: 1.5em;
-    
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(144, 144, 144);
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 15px;
+    background: #fff;
+    border: 2.5px solid rgba(207, 25, 25, 0.815);
 }
 
-.ater{
+.grid_item_a:hover{
+    background: rgb(165, 163, 163);
+    color: #fff;
+}
+
+.grid_item > h5{
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: rgb(78, 77, 77);
+    text-transform: uppercase;
+}
+
+.ministerio-trabajo > h5, .banco-central > h5, .ministerio-hacienda > h5, .srt > h5{
+    text-transform: capitalize;
+}
+
+.ater > img{
+    margin-top:80px;
+    margin-bottom: 10px;
+}
+
+.consejo > img{
     margin-top:30px;
+    margin-bottom: px;
 }
 
 .grid_item_img{
     max-width: 15em;
-    
 }
+
+/* Servicios */
+
+/* Hero */
+
+
+/* Main */
+.servicios-main{
+    width: 85%;
+    margin: auto;
+}
+
+.first-items{
+    text-align: center;
+    margin: 50px auto 0 auto;
+    width: 60%;
+    line-height: 20px;
+    padding: 15px;
+    background: rgb(223, 223, 223);
+    color:#d81010d0;
+    border-bottom-left-radius: 50px;
+}
+.first-items > h2{
+    font-size: 30px;
+}
+
+.first-items > p{
+    margin-top: 10px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+}
+.servicios-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    color: rgb(71, 70, 70);
+}
+
+.flexbox_item{
+    margin: 10px;
+    width: 19em;
+    min-width: 5em;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.flexbox_item > p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.flexbox_item > h3{
+    font-size: 22px;
+}
+
+
+
 
 

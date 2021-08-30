@@ -203,7 +203,6 @@ li > a{
     outline: 3px solid rgba(0, 0, 0, 0.267);
     margin-top:50px;
     position: absolute;
-    
 }
 
 .footer-container{
@@ -323,5 +322,35 @@ li > a{
     font-family: 'Poppins', sans-serif;
 }
 
+.links-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, minmax(2em,15em));
+    margin: 150px auto 50px auto;
+    width: 70%;
+    grid-gap: 30px;
+    
+    
+}
+
+.grid_item_{
+    display: flex;
+    padding: 10px;
+}
+
+.grid_item_button > a{
+    text-decoration: none;
+    font-size: 1.5em;
+    
+}
+
+.ater{
+    margin-top:30px;
+}
+
+.grid_item_img{
+    max-width: 15em;
+    
+}
 
 

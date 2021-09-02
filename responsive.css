@@ -1,0 +1,119 @@
+@media only screen and (min-width:1200px) and (max-width:1600px) {
+    .presentation{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(12,6.3em);
+        grid-template-areas: "about about "
+        "about about"
+        "about about"
+        "about about"
+        "about about"
+        "mission mission"
+        "mission mission"
+        "view view"
+        "view view"
+        "values values"
+        "values values"
+        "values values";
+        width: 60%;
+        grid-gap: 30px;
+        margin-top: 15px;
+    }
+
+    .aboutUs, .right-div{
+        max-width: 750px;
+    }
+
+    .nav-main{
+        height: 6em;
+    }
+
+    .list{
+        width: 55%;
+    }
+    .logo{
+        margin: 0 0 15px 100px;
+    }
+
+    .footer{
+        height: 18em;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr 1.8fr .9fr 1.2fr;
+        width: 98%;
+        grid-template-areas: 'logo first-column second-column third-column';
+    }
+
+    .logo-footer{
+        grid-area: logo;
+    }
+
+    .first-column{
+        grid-area: first-column;
+    }
+
+    .second-column{
+        grid-area: second-column;
+        margin: 0;
+    }
+
+    .third-column{
+        grid-area: third-column;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    
+    .menu-btn{
+        color: rgb(230, 22, 7);
+        font-size: 30px;
+        margin-right: 150px;
+    }
+
+    .logo{
+        margin: 0 0 15px 100px;;
+    }
+    
+    .list{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(63, 62, 62, 0.83); 
+        width: 20vw;  
+        height: 100vh;
+        border-bottom-left-radius: 0;
+    }
+
+    li{
+        margin: 0 auto 0 auto;
+    }
+
+    li > a{
+        color: #ffffff;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        padding: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        letter-spacing: 2px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.918);
+    } 
+
+    li > a:focus{
+        color: rgb(224, 46, 46);
+    }
+
+    li > a:active{
+        color: rgb(224, 46, 46);
+    }
+}
+
+@media screen and (max-width:767px) {
+    
+}
+
+@media screen and (max-width:480px) {
+    
+}

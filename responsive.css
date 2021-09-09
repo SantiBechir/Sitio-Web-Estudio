@@ -1,7 +1,6 @@
 @media only screen and (min-width:1200px) and (max-width:1600px) {
     .presentation{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(12,6.3em);
         grid-template-areas: "about about "
         "about about"
         "about about"
@@ -15,12 +14,16 @@
         "values values"
         "values values";
         width: 60%;
-        grid-gap: 30px;
+        grid-gap: 20px;
         margin-top: 15px;
     }
 
     .aboutUs, .right-div{
         max-width: 750px;
+    }
+
+    .right-div{
+        padding: 20px;
     }
 
     .nav-main{
@@ -60,6 +63,11 @@
     .third-column{
         grid-area: third-column;
     }
+
+    .links-container{
+        grid-template-columns: repeat(3,1fr);
+        width: 70%;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1199px) {
@@ -74,7 +82,7 @@
         margin: 0 0 15px 100px;;
     }
     
-    .list{
+    /* .list{
         display: block;
         position: absolute;
         top: 0;
@@ -99,7 +107,7 @@
         font-weight: 600;
         letter-spacing: 2px;
         border-bottom: 2px solid rgba(255, 255, 255, 0.918);
-    } 
+    }  */
 
     li > a:focus{
         color: rgb(224, 46, 46);
@@ -108,12 +116,443 @@
     li > a:active{
         color: rgb(224, 46, 46);
     }
+
+    /* HERO */
+    .hero{
+        padding:7%;
+        height: 15%;
+    }
+    .hero-title{
+        font-size: 1.8rem;
+        margin-top: 40px;
+    }
+
+    .hero-paragraph{
+        font-size: 1.166rem;
+    }
+
+    .presentation{
+        grid-template-columns: 1fr;
+        grid-template-areas: "about about "
+        "about about"
+        "about about"
+        "about about"
+        "about about"
+        "mission mission"
+        "mission mission"
+        "view view"
+        "view view"
+        "values values"
+        "values values"
+        "values values"
+        "values values";
+        width: 70%;
+        grid-gap: 20px;
+        margin-top: 15px;
+    }
+
+    .aboutUs, .right-div{
+        margin-right:10px ;
+        padding: 15px;
+    }
+
+    .footer{
+        height:38em;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,7em);
+        width: 60%;
+        grid-template-areas: "logo"
+        "first-column"
+        "second-column"
+        'third-column';
+        margin: auto;
+    }
+
+    .logo-footer{
+        grid-area: logo;
+    }
+
+    .first-column{
+        grid-area: first-column;
+        margin: 0;
+    }
+
+    .second-column{
+        grid-area: second-column;
+        margin: 0;
+    }
+
+    .third-column{
+        grid-area: third-column;
+        margin: 50px 0 100px 0 ;
+    }
+
+    .links-container{
+        grid-template-columns: repeat(2,1fr);
+        width: 70%;
+    }
+
+    .first-items{
+        width: 75%;
+    }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (min-width:580px) and (max-width:767px) {
+      /* HERO */
+      .hero{
+        padding:7%;
+        height: 15%;
+    }
+    .hero-title{
+        font-size: 1.8rem;
+        margin-top: 70px;
+    }
+
+    .hero-paragraph{
+        font-size: 1.166rem;
+    }
     
+    .presentation{
+        grid-template-columns: 1fr;
+        grid-template-areas: "about about "
+        "about about"
+        "about about"
+        "about about"
+        "about about"
+        "about about"
+        "mission mission"
+        "mission mission"
+        "mission mission"
+        "view view"
+        "view view"
+        "view view"
+        "values values"
+        "values values"
+        "values values"
+        "values values"
+        "values values";
+        width: 82%;
+        grid-gap: 20px;
+        margin-top: 15px;
+    }
+
+    .aboutUs, .right-div{
+        margin-right:20px ;
+        padding: 15px;
+    }
+
+    .footer{
+        height:38em;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,7em);
+        width: 63%;
+        grid-template-areas: "logo"
+        "first-column"
+        "second-column"
+        'third-column';
+        margin: auto;
+    }
+
+    .logo-footer{
+        grid-area: logo;
+        margin-bottom: 0;
+        width: 300px;
+    }
+
+    .first-column{
+        grid-area: first-column;
+        margin: 0;
+    }
+
+    .second-column{
+        grid-area: second-column;
+        margin: 0;
+    }
+
+    .third-column{
+        grid-area: third-column;
+        margin: 50px 0 100px 0 ;
+    }
+
+    .links-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .first-items{
+        width: 75%;
+    }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (min-width:493px) and (max-width:579px) {
+    /* HERO */
+    .hero{
+        padding:7%;
+        height: 15%;
+    }
+    .hero-title{
+        font-size: 1.5rem;
+        margin-top: 70px;
+    }
+
+    .hero-paragraph{
+        font-size: 1rem;
+    }
     
+    .presentation{
+        grid-template-columns: 1fr ;
+        grid-template-areas: "about about "
+        "about about"
+        "about about"
+        "about about"
+        "about about"
+        "about about"
+        "mission mission"
+        "mission mission"
+        "mission mission"
+        "view view"
+        "view view"
+        "view view"
+        "values values"
+        "values values"
+        "values values"
+        "values values"
+        "values values"
+        ;
+        width:89%;
+        grid-gap: 20px;
+        margin-top: 15px;
+    }
+
+
+    .right-div{
+        padding: 15px;
+    }
+
+    .aboutUs{
+        margin-right: 30px;
+        padding: 10px;
+    }
+
+    .grid-element > h3{
+        font-size: 23px;
+    }
+
+    .grid-element > p{
+        font-size: 14px;
+    }
+
+    .presentation-a{
+        padding: 13px 53px 13px 48px;
+        font-size: 23px;
+    }
+    
+    .aboutUs > img{
+        height: 180px;
+        margin: 20px 20px 20px 80px;
+    }
+
+
+    .footer{
+        height:40em;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,6em);
+        width: 63%;
+        grid-template-areas: "logo"
+        "first-column"
+        "second-column"
+        'third-column';
+    }
+
+    .logo-footer{
+        grid-area: logo;
+        margin-left: 0;
+        width: 250px;
+    }
+
+    .first-column{
+        grid-area: first-column;
+        margin: 0;
+    }
+
+    .second-column{
+        grid-area: second-column;
+        margin-top: 25px;
+    }
+
+    .third-column{
+        grid-area: third-column;
+        margin: 50px 0 100px 0 ;
+    }
+
+    .links-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .hero-links{
+        background-size: cover;
+    }
+
+    .hero-title_links{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+
+    .hero-paragraph_links{
+        font-size: 18px;
+        word-spacing: 3px;
+        letter-spacing: 2px;
+    }
+
+    .first-items{
+        width: 85%;
+    }
 }
+
+@media screen and (max-width:492px) {
+    .hero{
+        padding:7%;
+        height: 15%;
+    }
+    .hero-title{
+        font-size: 1.2rem;
+        margin-top: 70px;
+    }
+
+    .hero-paragraph{
+        font-size: 0.8rem;
+    }
+    
+    .presentation{
+        grid-template-columns: 1fr;
+        
+        grid-template-areas: "about about "
+        "about about"
+        "about about"
+        "about about"
+        "mission mission"
+        "mission mission"
+        "view view"
+        "view view"
+        "view view"
+        "values values"
+        "values values"
+        "values values"
+        "values values"
+        "values values";
+        width:91%;
+        grid-gap: 20px;
+        margin-top: 15px;
+    }
+
+
+    .right-div{
+        padding: 12px;
+    }
+
+    .aboutUs{
+        margin-right: 30px;
+        margin-bottom: 0;
+        padding: 10px;
+    }
+
+    .mission{
+        margin-top: 0;
+    }
+
+    .grid-element > h3{
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .grid-element > p{
+        font-size: 12px;
+    }
+
+    .presentation-a{
+        padding: 5px 16px 5px 16px;
+        font-size: 16px;
+    }
+    
+    .aboutUs > img{
+        height: 95px;
+        margin: 20px 20px 20px 80px;
+    }
+
+
+    .footer{
+        height:45em;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,8em);
+        width: 95%;
+        grid-template-areas: "logo"
+        "first-column"
+        "second-column"
+        'third-column';
+        margin-left: 12px;
+    }
+
+    .logo-footer{
+        grid-area: logo;
+        width: 250px;
+    }
+
+    .first-column{
+        grid-area: first-column;
+        margin: 0;
+    }
+
+    .second-column{
+        grid-area: second-column;
+        margin-top: 45px;
+    }
+
+    .third-column{
+        grid-area: third-column;
+        margin: 50px 0 100px 0 ;
+    }
+    .links-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .hero-links{
+        background-size: cover;
+    }
+
+    .hero-title_links{
+        font-size: 33px;
+        margin-top: 45px;
+    }
+
+    .hero-paragraph_links{
+        font-size: 14px;
+        word-spacing: 3px;
+        letter-spacing: 2px;
+    }
+
+    .grid_item_img{
+        width: 12em;
+    }
+
+    .first-items{
+        width: 95%;
+    }
+
+    .first-items > h2{
+        line-height: 30px;
+    }
+
+    .servicios-main{
+        width: 95%;
+    }
+} 

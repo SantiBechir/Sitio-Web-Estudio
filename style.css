@@ -49,11 +49,11 @@
     padding: 1em 2em 1em 1em;
 }
 
-li > a:hover{
+.li-element > a:hover{
     color: #a8a8a8;
 }
 
-li > a{
+.li-element > a{
     text-decoration: none;
     color: rgb(255, 255, 255); 
     font-size: 18px;
@@ -61,6 +61,11 @@ li > a{
 
 .menu-btn{
     display: none;
+    cursor: pointer;
+}
+
+.menu-btn:hover{
+    color: #f00;
 }
 
 /* HERO */
@@ -71,7 +76,7 @@ li > a{
     padding: 10%;
     background-size: cover;
     background-position: center;
-    color: hsl(0, 1%, 30%);
+    color: rgb(255, 0, 0);
     border-bottom: 3.5px solid rgba(240, 46, 46, 0.849);
 }
 
@@ -90,6 +95,7 @@ li > a{
     display: block;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
+    color: rgb(209, 19, 19);
     text-align: center;
 }
 
@@ -199,33 +205,31 @@ li > a{
 
 /* FOOTER */
 .footer{
-    height: 12em;
+    min-height: 15em;
+    max-height: 45em;
     width: 100%;
     background: rgb(224, 224, 224);
     outline: 3px solid rgba(0, 0, 0, 0.267);
     margin-top:50px;
-    
 }
 
 .footer-container{
     display: grid;
-    grid-template-columns: .5fr 1.4fr 1fr 1.5fr;
-    grid-template-areas: 'logo first-column second-column third-column';
-    grid-auto-flow: dense;
-    width: 80%;
-    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr .5fr 1fr;
+    width: 85%; 
     margin: auto;
 }
 
 .column{
     list-style: none;
     margin-top: .5em;
-    padding: 1em 1em 0 2em;
+    padding: 1em 2em;
     font-family: 'Raleway', sans-serif;
     color: rgba(0, 0, 0, 0.678);
 }
 
-.column > li{
+
+.column > #li{
     margin: 5px;
 }
 
@@ -236,53 +240,35 @@ li > a{
     color: rgb(172, 44, 44);
 }
 
-.column > li > a{
+.column > #li > a{
     color: rgba(0, 0, 0, 0.678) ;
-    font-size: 15px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
-.column > li > a:hover {
+.column > #li > a:hover {
     color: #ca2f2f;
 }
 
-.column > p,li{
+.column > p,#li{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     margin: auto;
 }
 
-.first-column{
-    grid-area: first-column;
-}
 
-.second-column{
-    grid-area: second-column;
-    margin: 0;
-}
-
-.third-column{
-    grid-area: third-column;
-}
-
-.column > li > i{
+.column > #li > i{
     display: inline-block;
     font-size: 20px;
-    margin-right: 10px;
-    color: red;
-}
-
-.column > li > a > i{
-    display: inline-block;
-    font-size: 20px;
-    margin-right: 10px;
-    margin-left: 5px;
-    color: red;
+    margin-right: 8px;
+    color: rgb(255, 0, 0);
 }
 
 .logo-footer{
     margin-top: 30px;
-    width: 300px;
-    grid-area: logo;
+    max-height: 60px;
 }
 
 /* Nosotros */
@@ -293,7 +279,7 @@ li > a{
     padding: 10%;
     background-size: 100%;
     background-repeat: no-repeat;
-    color: rgba(36, 35, 35, 0.733);
+    color: rgba(235, 12, 12, 0.918);
     border-bottom: 3.5px solid rgba(240, 46, 46, 0.849);
 
 }
@@ -316,7 +302,7 @@ li > a{
     font-family: 'Poppins', sans-serif;
     text-align: center;
     z-index: 10;
-    color: black;
+    color: rgb(209, 19, 19);
 }
 
 
@@ -351,7 +337,7 @@ li > a{
     padding: 10%;
     background-size: 100%;
     background-repeat: no-repeat;
-    color: rgba(36, 35, 35, 0.89);
+    color: rgba(248, 10, 10, 0.89);
     border-bottom: 3.5px solid rgba(240, 46, 46, 0.849);
 
 }
@@ -374,7 +360,7 @@ li > a{
     font-family: 'Poppins', sans-serif;
     text-align: center;
     z-index: 10;
-    color: rgb(0, 0, 0);
+    color: rgb(209, 19, 19);
 }
 
 
@@ -434,7 +420,6 @@ li > a{
 
 .consejo > img{
     margin-top:30px;
-    margin-bottom: px;
 }
 
 .grid_item_img{
@@ -450,7 +435,7 @@ li > a{
     padding: 10%;
     background-size: 100%;
     background-repeat: no-repeat;
-    color: rgba(148, 148, 148, 0.89);
+    color: rgba(255, 0, 0, 0.89);
     border-bottom: 3.5px solid rgba(240, 46, 46, 0.849);
 
 }
@@ -473,7 +458,7 @@ li > a{
     font-family: 'Poppins', sans-serif;
     text-align: center;
     z-index: 10;
-    color: #686868;
+    color: #df2525;
 }
 
 /* Main */
@@ -531,11 +516,11 @@ li > a{
 /* HERO */
 .hero-contact{    
     width: 100vw;
-    background-image: url('Images/hero-servicios.jpg');
+    background-image: url('Images/hero-contacto.jpg');
     padding: 10%;
     background-size: 100%;
     background-repeat: no-repeat;
-    color: rgba(100, 100, 100, 0.89);
+    color: rgb(240, 9, 9);
     border-bottom: 3.5px solid rgba(240, 46, 46, 0.849);
 }
 
@@ -557,7 +542,7 @@ li > a{
     font-family: 'Poppins', sans-serif;
     text-align: center;
     z-index: 10;
-    color: #686868;
+    color: #f05a5a;
 }
 
 /* main */
